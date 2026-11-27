@@ -1,0 +1,116 @@
+[
+  {
+    "_规则说明": "v2 字段：pattern=正则；field=匹配字段(family/copyright/manufacturer/file/all)；priority=优先级(数字大者优先)；exclude=排除正则数组(任一命中则跳过本条)；name=规则名；source=官方依据链接；enabled=false 可停用。按优先级降序匹配，第一条命中即生效。"
+  },
+  {
+    "name": "免费·仓耳站酷",
+    "priority": 305,
+    "field": "all",
+    "pattern": "仓耳渔阳体|站酷仓耳|ZCOOL Addict",
+    "level": "可商用",
+    "note": "站酷与仓耳字库联合发布的公益字体，官方声明免费授权全社会使用（含商用）",
+    "alt": "—",
+    "source": "https://www.zcool.com.cn/special/zcoolfonts/",
+    "enabled": true
+  },
+  {
+    "name": "免费·开源与厂商免费字体",
+    "priority": 300,
+    "field": "all",
+    "pattern": "思源|Source ?Han|Noto ?(Sans|Serif)|阿里巴巴普惠体|Alibaba ?PuHuiTi|阿里妈妈|Alimama|OPPO ?Sans|MiSans|HarmonyOS ?Sans|得意黑|Smiley ?Sans|站酷|优设|庞门正道|文泉驿|WenQuanYi|霞鹜|LXGW|未来荧黑|Glow ?Sans|Fandol|朱雀仿宋|寒蝉|抖音美好体|猫啃|楚辰体|云江体|临海隶书|乡立方黑体|鸿雷板书|鸿雷拙书|鸿雷行书|云峰飞云体|龚帆免费体|钉钉进步体|猴尊宋体|新叶念体|黄煜臣江西拙楷|清松手写体|源云明体|有爱魔兽|字体圈欣意吉祥宋|851马克笔|包图小白体|和田研细丸|和田研中丸|日本花园明朝|Marsboy|LoveLight|Qwigley|M PLUS|IPA ?(Gothic|Mincho)|VL Gothic",
+    "level": "可商用",
+    "note": "开源或字体厂商/公益平台声明免费商用；部分条款禁止商标注册或单独售卖字体文件，商用前请核对官方最新说明",
+    "alt": "—",
+    "source": "https://51font.17font.com/",
+    "enabled": true
+  },
+  {
+    "name": "免费·内嵌开源许可",
+    "priority": 295,
+    "field": "copyright",
+    "pattern": "SIL OPEN FONT LICENSE|OFL-1\\.1|Apache ?License|Apache-2\\.0|Mozilla Public License",
+    "level": "可商用",
+    "note": "字体文件内嵌开源许可声明，通常允许商用；注意 OFL 禁止单独售卖字体文件本身",
+    "alt": "—",
+    "source": "https://openfontlicense.org/",
+    "enabled": true
+  },
+  {
+    "name": "免费·项目作者开源声明",
+    "priority": 292,
+    "field": "copyright",
+    "pattern": "Project Authors|with Reserved Font Name|This Font Software is licensed under",
+    "level": "可商用",
+    "note": "字体版权字段含开源项目作者声明，通常随附 SIL OFL 许可；仍建议核对官方许可文件",
+    "alt": "—",
+    "source": "https://openfontlicense.org/",
+    "enabled": true
+  },
+  {
+    "name": "高风险·系统内嵌商业字体",
+    "priority": 260,
+    "field": "family",
+    "pattern": "^(微软雅黑|Microsoft ?YaHei|等线|DengXian|微软正黑|Microsoft JhengHei|苹方|PingFang)(?:\\s+[A-Za-z\\u4e00-\\u9fa5]+)?$",
+    "level": "高风险",
+    "note": "系统随附但字形为现代商业设计（微软雅黑=方正兰亭黑），字形版权归第三方字库公司，对外商用发布需授权；属系统文件，删除可能影响系统显示，建议保留并改用免费字体替代",
+    "alt": "思源黑体 / 阿里巴巴普惠体 / MiSans",
+    "source": "https://learn.microsoft.com/typography/fonts/font-faq",
+    "enabled": true
+  },
+  {
+    "name": "常规·公有领域字形系统字体",
+    "priority": 255,
+    "field": "family",
+    "pattern": "^(宋体|SimSun|新宋体|NSimSun|黑体|SimHei|楷体|KaiTi|仿宋|FangSong)(?:\\s+[A-Za-z\\u4e00-\\u9fa5]+)?$",
+    "level": "常规",
+    "note": "宋体/黑体/楷体/仿宋等基础字形属公有领域，随 Windows 分发，正常排版输出一般无争议；字库文件本身不可转售",
+    "alt": "—",
+    "source": "https://learn.microsoft.com/typography/fonts/font-faq",
+    "enabled": true
+  },
+  {
+    "name": "常规·系统办公字体",
+    "priority": 250,
+    "field": "all",
+    "pattern": "Microsoft Corporation|Monotype|中易|ZhongYi|JIYUKOBO|Segoe|Calibri|Cambria|Arial|Times New Roman|Tahoma|Verdana|Consolas|Yu Gothic|MS Gothic|MingLiU|Batang|Gulim|Malgun|Meiryo",
+    "level": "常规",
+    "note": "随系统或 Office 分发的常规字体，正常排版输出一般无争议；字库文件本身不可转售",
+    "alt": "—",
+    "source": "https://learn.microsoft.com/typography/fonts/font-faq",
+    "enabled": true
+  },
+  {
+    "name": "中风险·Adobe Fonts 订阅",
+    "priority": 240,
+    "field": "all",
+    "pattern": "Adobe",
+    "level": "中风险",
+    "note": "Adobe Fonts 订阅字体，授权通常只覆盖 Adobe 应用内使用；思源系列请见可商用规则",
+    "alt": "思源系列",
+    "source": "https://fonts.adobe.com/",
+    "enabled": true
+  },
+  {
+    "name": "高风险·商业字库厂商",
+    "priority": 200,
+    "field": "all",
+    "pattern": "方正|Founder|FOUNDER|兰亭|汉仪|Hanyi|HANYI|华文|华康|DynaFont|文鼎|Arphic|造字工房|字魂|锐字|腾祥|筑紫|汉鼎|叶根友|仓耳|Canger|喜鹊|华光|新蒂|上首|苏新诗|胡晓波|三极|汉呈|邯郸|王汉宗|刻石录|汉标|郑庆科|荆南|禹卫|创客贴|刘兵克|字研室|HyFont|段宁|茂山|香蕉灵感|福芦灵感|饿了羊|爱点字库|元宝团子|百家造字|罗国成|山海字库|小欣大萌|字耕者|字小魂|向佳红|李旭科|字动力|建首字库|壹禾|安景臣|东篱|方舆字研|文道|字语字库|麦拉风|喵字馆|施申财|梁培生|字悦字型|平方造字",
+    "exclude": ["SIL OPEN FONT LICENSE|OFL-1\\.1"],
+    "level": "高风险",
+    "note": "商业字库或权属第三方，商用需另行授权；下载站的“免费下载”不等于“免费商用”",
+    "alt": "思源黑体 / 阿里巴巴普惠体 / MiSans",
+    "source": "https://www.foundertype.com/",
+    "enabled": true
+  },
+  {
+    "name": "待核实·第三方共有版权声明",
+    "priority": 190,
+    "field": "copyright",
+    "pattern": "Portions\\s*©?\\s*\\d{0,4}\\s*(Beijing Founder|Founder|方正|汉仪)|Copyright\\s*\\(?c?\\)?\\s*\\d{0,4}\\s*(Beijing Founder|Founder Electronics|汉仪)",
+    "level": "待核实",
+    "note": "版权声明显示与第三方字库公司共有，商用前需核实授权范围",
+    "alt": "思源系列",
+    "source": "https://www.fonts.net.cn/",
+    "enabled": true
+  }
+]

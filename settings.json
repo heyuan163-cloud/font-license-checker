@@ -1,0 +1,4 @@
+{
+  "showRuleButton": false,
+  "_说明": "showRuleButton 设为 true 时，主界面右上角显示「规则设置」按钮；false（默认）则隐藏。无论显示与否，按 Ctrl+R 都能打开 rules.json 编辑规则。"
+}
