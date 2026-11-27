@@ -1,5 +1,7 @@
 # 字体版权自查工具 · Font License Checker
 
+> 🖥️ **系统要求：仅支持 Windows 10 / 11**（依赖 PowerShell 与 WinForms）。macOS、Linux、手机暂不支持，请勿在这些系统上下载使用。
+
 扫描 Windows 已安装字体，读字体文件内的版权字段，按商业字库清单做风险分级，导出报告。**免费**，无需安装。
 
 ## 这是什么
@@ -25,7 +27,7 @@
 
 > 注意：`字体版权自查.exe` 是引导程序，必须和 `font-scanner.ps1`、`rules.json`、`settings.json` 放在同一个文件夹里才能正常运行。
 
-国内下载较慢的话，使用 README 里的镜像链接（发布后补充）。
+> 💡 系统要求：仅支持 Windows 10 / 11。Mac 和手机暂不支持，请勿下载。
 
 ## 判定口径
 
